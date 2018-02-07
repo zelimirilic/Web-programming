@@ -1,0 +1,36 @@
+ /* @font-face {
+        
+    font-family:'Rammetto One' ;
+    src: url('https://fonts.gstatic.com/s/rammettoone/v6/mh0uQ1tV8QgSx9v_KyEYPOgdm0LZdjqr5-oayXSOefg.woff2');
+}   */
+
+
+p {
+
+font-family: "Rammetto One";
+font-size:1.5em;
+
+}
+
+#drugi {
+text-decoration: "blink";
+font-family: "Rammetto One";
+font-weight:bold;
+font-style: italic;
+
+}
+
+#treci {
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#zadnji {
+
+    font-weight: bold;
+     
+
+}
+
