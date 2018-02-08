@@ -1,0 +1,40 @@
+body{
+    font-size: 32px;
+}
+
+.f {
+    
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.s {
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-align: right;
+}
+.v {
+text-align: center;
+    }
+
+.x a {
+    text-shadow: 3px 3px 3px rgba(119, 189, 8, 0.7);
+    
+}
+
+a:link {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+a:active {
+    color: blue;
+}
