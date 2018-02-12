@@ -1,0 +1,47 @@
+.div {
+    margin: 50px auto;
+    width: 300px;
+    background: rgb(224, 219, 224); 
+    padding: 30px 30px;
+    border-radius: 15px 0px;
+    
+   
+
+
+
+}
+
+.l  { 
+    display: block;
+    margin: auto;
+   
+}
+
+.i {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+.h {
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+.sp {
+    color: rgb(218, 164, 29);
+}
+
+.sub {
+    background: red;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+   
+
+}

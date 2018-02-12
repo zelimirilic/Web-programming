@@ -1,0 +1,35 @@
+.tab {
+    margin: auto;
+    border-collapse: collapse;
+   
+}
+
+.tab td {
+    padding-left: 20px;
+}
+
+.tab tr:hover {
+    background-color: rgb(175, 175, 15);
+}
+
+.t {
+    background: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.a {}
+
+.b {
+    font-size: 20px;
+    background: gainsboro;
+}
+
+.d {
+    background: gainsboro;
+}
+
+.picHeight {
+    height: 100px;
+}
+

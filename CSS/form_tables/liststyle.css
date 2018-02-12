@@ -1,0 +1,26 @@
+.a {
+    list-style-type: disc;
+} 
+
+.b {
+    list-style-type: square;
+}
+.c {
+    list-style-type: upper-alpha;
+}
+.d {
+    list-style-type: upper-roman;
+}
+.e {
+    list-style-image: url(http://www.fullcompass.com/craigx/img/Website%20Header/lowPrice_icon_50x50.png);
+    text-align: left;
+    width: 200px;
+    margin: 20px;
+    
+    
+}
+.f {
+   width:  300px;
+
+   list-style-position:  inside;
+}
