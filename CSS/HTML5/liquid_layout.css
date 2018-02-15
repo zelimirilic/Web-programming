@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+header {
+    font-size: 20px;
+    overflow: auto;
+}
+
+img {
+    float: left;
+    border-radius: 50%;
+}
+
+.first {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    }
+
+.second {
+    width: 25%;
+    border-left: 2px solid black;
+    display: inline-block;
+    padding-left: 30px;
+}
