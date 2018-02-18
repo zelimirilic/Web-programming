@@ -1,70 +1,109 @@
-#container {
-    width: 100%;
+@font-face {
+    font-family: "ROBOTO";
+    src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "ROBOTO";
+}
+
+. container {
+    width: 90%;
+}
+
+header {
+    background: url(naslovna.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 5%;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+span {
+    color: orange;
+    display: inline-block;
+    border: 2px solid grey;
+    border-right: 0;
+    padding-left: 5px;
+}
+
+div>h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+header>img {
+    width: 90%;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #4098e0;
+    margin: 3%;
+    border: none;
+    padding: 5px;
+    color: aliceblue;
+}
+
+nav {
+    margin: 2%;
+    text-align: center;
+    background-color: #18aef3ee;
+}
+
+a {
+    color: white;
+    text-decoration-line: none;
+}
+
+nav>ul>li {
+    padding: 2%;
+    margin: 1% 0;
 }
 
 h1 {
     text-align: center;
+    margin: 3%;
+}
+
+section>h3 {
+    color: #4098e0;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-   
-}
-
-.main {
-    margin-bottom: 20px;
-}
-
-ul {
-    padding: 0px;
-    width: 570px;
-    
-    margin: 0 auto;
-}
-
-li {
-    list-style: none;
-    text-align: center;
-    border: 1px solid gray;
-    margin-bottom: 1px;
-    padding: 10px 0px;
-    border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-
-li:last-child {
-    margin-bottom: 30px;
-}
-
-li:hover {
-    background-color: blue;
-    color: white;
+    width: 100%;
+    padding: 10px;
+    background-size: cover;
 }
 
 p {
-    width: 570px;
-    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
 }
 
-@media (min-width:576px) {
-    h1 {
-       float: left;
-       
-    }
-    .main{
+h3 {
+    text-align: left;
+    padding: 5px;
+}
 
-       clear: both;
-    }
-    ul{
-        width: 100%;
-    }
-    img{
-        width: 100%;
-    }
-  
+section ul {
+    list-style-image: url(strelica.png);
+    list-style-position: inside;
+}
 
+section ul li {
+    text-align: left;
+    padding: 10px;
+    padding-left: 0;
+    color: grey;
 }
