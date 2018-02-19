@@ -80,10 +80,12 @@ section>h3 {
     color: #4098e0;
 }
 
-img {
+main img {
+    display: block;
     width: 100%;
-    padding: 10px;
-    background-size: cover;
+    margin: 7px 0;
+    width: 85%;
+    margin: 0 auto;
 }
 
 p {
@@ -157,14 +159,50 @@ section ul li {
         width: 50%;
         float: left;
     }
-    img {
-        right: 0;
-        position: absolute;
+    main img {
         width: 50%;
-        margin-top: 10px;
+        margin-top: 25px;
         height: auto;
     }
     section:last-of-type {
         margin: 0;
     }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    main {
+        width: 70%;
+        margin: 0 auto;
+    }
+    section:first-of-type {
+        width: 30%;
+        float: left;
+    }
+    section:last-of-type {
+        width: 30%;
+        float: left;
+    }
+    main img {
+        display: inline;
+        width: 33%;
+        margin: o auto;
+        height: auto;
+        float: left;
+    }
+    /*
+    header>p {
+        padding: 10px;
+        padding-top: 200px;
+        font-size: 290%;
+        font-family: "ROBOTO";
+    }
+    header>a {
+        
+        padding: 5px;
+        margin-bottom: 100px;
+    }
+    
 }
