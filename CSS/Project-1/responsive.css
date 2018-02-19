@@ -107,3 +107,64 @@ section ul li {
     padding-left: 0;
     color: grey;
 }
+
+@media (min-width: 768px) {
+    .container {
+        position: relative;
+    }
+    h2 {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        padding-left: 15px;
+    }
+    nav {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        font-size: 10px;
+    }
+    nav>ul {
+        float: right;
+        background-color: transparent;
+        width: auto;
+        margin-right: 20px;
+    }
+    nav>ul>li {
+        display: inline;
+    }
+    main {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+    }
+    section p {
+        margin: 3px;
+    }
+    section ul {
+        list-style-image: url(strelica.png);
+        list-style-position: inside;
+    }
+    section ul li {
+        text-align: left;
+        padding: 10px;
+        padding-left: 0;
+        color: grey;
+        float: left;
+    }
+    section :first-of-type {
+        margin-top: 10px;
+        width: 50%;
+        float: left;
+    }
+    img {
+        right: 0;
+        position: absolute;
+        width: 50%;
+        margin-top: 10px;
+        height: auto;
+    }
+    section:last-of-type {
+        margin: 0;
+    }
+}
