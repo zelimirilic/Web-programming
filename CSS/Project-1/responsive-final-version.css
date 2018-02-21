@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    background-image: url(./img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+    width: 100%;
+    height: 10%;
+}
+
+.banner p {
+    text-align: center;
+    color: white;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+}
+
+.banner button {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: rgb(65, 148, 225);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    width: 130px;
+}
+
+.logo h1 {
+    margin-top: 7%;
+    font-size: 1.8rem;
+    font-family: arial;
+    font-weight: bold;
+    color: grey;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.logo h1 span {
+    padding-left: 2%;
+    color: rgb(255, 153, 0);
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: grey;
+}
+
+nav {
+    margin-bottom: 20%;
+    padding: 0 4%;
+}
+
+nav ul {
+    text-align: center;
+    background-color: rgb(92, 166, 235);
+    color: white;
+}
+
+nav ul li {
+    padding: 2% 0;
+
+}
+
+nav ul li:first-child {
+    padding-top: 5%;
+}
+
+nav ul li:last-child {
+    padding-bottom: 5%;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 25% 0 10% 0;
+    color: black;
+}
+
+hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+main {
+    padding: 0 7%;
+}
+
+main h3 {
+    padding: 5% 0;
+    color: rgb(65, 148, 225);
+}
+
+main ul {
+    margin-top: 5%;
+    list-style: url(./img/arrow_bullet.png);
+    list-style-position: inside;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    margin: 5% 0;
+}
+
+main ul li {
+    padding: 2% 0;
+}
+
+.twitter img {
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 1%;
+    float: left;
+    margin-left: 4%
+}
+
+.twitter {
+    background-color: rgb(65, 148, 225);
+}
+
+.twitter header::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.twitter-name {
+    padding-top: 10%;
+}
+
+.twitter header p {
+    padding-left: 29%;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1%;
+}
+
+.twitter content p {
+    color: white;
+    margin-bottom: 5%;
+    padding: 0 3% 5% 3%;
+}
+
+.twitter.last-section {
+    margin-bottom: 10%;
+}
+
+h2 .underline {
+    border-bottom: 2px solid black;
+    padding: 6px;
+    text-align: centerč
+    
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+.top {
+    background-color: lightseagreen;
+    padding: 5%;
+    line-height: 1.7;
+}
+
+.middle {
+    background-color: rgb(209, 89, 89);
+    padding: 6% 0;
+    line-height: 2.3rem;
+}
+
+.middle p:last-child {
+    letter-spacing: 20px;
+    padding-left: 5%;
+}
+
+.address {
+    background-color: royalblue;
+    font-style: normal;
+    padding: 5% 0;
+    line-height: 2rem;
+}
+
+.house {
+    background-color: lightblue;
+}
+
+.house img {
+    height: 160px;
+    width: 215px;
+    margin: 5% 0;
+}
+
+input,
+textarea {
+    display: block;
+    width: 91%;
+    padding: 3%;
+    margin: 2% auto;
+}
+
+form button {
+    width: 25%;
+    padding: 2% 0;
+    background-color: rgb(255, 153, 0);
+    border-radius: 5px;
+    border: none;
+    float: left;
+    margin-left: 4%;
+    color: white;
+}
+
+.footer-nav {
+    margin-top: 20%;
+    padding: 2% 8%;
+    background-color: black;
+}
+
+.footer-nav ul li {
+    list-style: none;
+    display: inline;
+    font-size: 0.9rem;
+    margin: 0 1px;
+}
+
+.footer-nav ul {
+    margin: 10% 0px;
+}
+
+.footer-nav p {
+    margin-bottom: 10%;
+    font-size: 0.9rem;
+}
+
+.fa-star:before {
+    color: white;
+    font-size: 0.9rem;
+}
+
+@media(min-width:768px) {
+    .banner {
+        position: relative;
+    }
+
+
+    .logo {
+        position: absolute;
+        top: 1%;
+        text-align: left;
+    }
+    .logo h1 {
+        color: white;
+    }
+    nav {
+        margin-bottom: 10%;
+    }
+    h2 {
+        margin: 16% 0 16% 0;
+        clear: both;
+    }
+    nav ul {
+        position: absolute;
+        top: 4%;
+        right: 4%;
+        background-color: transparent;
+    }
+    nav ul li {
+        display: inline;
+        margin: 6px;
+    }
+    .logo h1 span {
+        border-color: white;
+    }
+    .banner p {
+        margin-bottom: 5%;
+        margin-top: 13%;
+    }
+    section {
+        width: 50%;
+        float: left;
+    }
+    main img {
+        width: 50%;
+    }
+    .bottom-section {
+        margin-bottom: 10%;
+    }
+    section.bottom-section {
+        display: inline;
+        float: none;
+    }
+    section.bottom-section ul li {
+        padding: 1% 0;
+    }
+    .twitter {
+        margin: 2%;
+        width: 45%;
+    }
+    .twitter.bottom-section {
+        margin-bottom: 10%;
+    }
+    .top {
+        height: 150px;
+    }
+    .middle {
+        height: 150px;
+    }
+    .address {
+        width: 50%;
+        height: 150px;
+    }
+    .house {
+        height: 150px;
+    }
+    .house img {
+        height: 140px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+    input {
+        display: inline;
+        width: initial;
+        padding: 1%;
+        margin-left: 1%;
+    }
+    textarea {
+        width: 93%;
+    }
+    .footer-nav {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .footer-nav ul {
+        margin: 5% 0;
+    }
+    .footer-nav p {
+        margin-bottom: 5%;
+        font-size: 1rem;
+    }
+    .footer-nav ul li {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width:1200px) {
+    .logo {
+        top: 2%;
+        left: -5%;
+    }
+    .logo h1 {
+        margin-top: 0;
+    }
+    nav ul {
+        top: 3%;
+    }
+    .banner {
+        padding: 10% 0;
+    }
+    .banner p {
+        font-size: 2.8rem;
+    }
+    .banner button {
+        padding: 1% 4%;
+        width: 180px;
+    }
+    section {
+        width: 24%;
+        margin-left: 8%;
+        margin-right: 4%;
+    }
+    main img {
+        width: 25%;
+        float: left;
+        margin: 0;
+        margin-top: 1%;
+    }
+    section.bottom-section {
+        display: block;
+        float: left;
+        margin-left: 4%;
+        margin-bottom: 10%;
+    }
+    h2 {
+        margin: 6% 0 4% 0;
+    }
+    nav {
+        margin-bottom: 5%;
+    }
+    .twitter {
+        margin: 1%;
+        width: 30%;
+        padding: 1%;
+    }
+
+    .twitter-name {
+        padding-top: 5%;
+    }
+
+    .twitter content p {
+        margin-top: 4%;
+        margin-bottom: 0%;
+    }
+    
+    .top, .middle, .address, .house {
+        margin: 0%;
+        width: 25%;
+    }
+
+    .house img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .top {
+        padding: 3%;
+    }
+
+    .middle {
+        padding: 3% 0;
+    }
+
+    .address {
+        padding: 2% 1%;
+    }
+
+    input {
+        width: 30%;
+    }
+
+    form button {
+        width: 8%;
+        border-radius: 0;
+        font-size: 1.1rem;
+        padding: 1% 0;
+    }
+
+    .footer-nav {
+        margin-top: 5%;
+        margin-left: 0%;
+        padding: 0;
+    }
+    .footer-nav ul{
+        margin: 3% 0;
+    }
+
+    .footer-nav p {
+        margin-bottom: 3%;
+    }
+
+    .mail-us {
+        margin-top: 5%;
+    }
+}
