@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #e3f2fd; }
+
+.container {
+  width: 50%;
+  margin: 0 auto; }
+  .container h1 {
+    padding: 20px 0;
+    text-align: center;
+    background: #1ec21e;
+    color: white;
+    -webkit-box-shadow: 15px 20px 100px #1ec21e;
+    -moz-box-shadow: 15px 20px 100px #1ec21e;
+    -ms-box-shadow: 15px 20px 100px #1ec21e;
+    box-shadow: 15px 20px 100px #1ec21e;
+    -webkit-text-shadow: -5px 0px 7px white;
+    -moz-text-shadow: -5px 0px 7px white;
+    -ms-text-shadow: -5px 0px 7px white;
+    text-shadow: -5px 0px 7px white; }
+  .container h2 {
+    margin-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background: #1ec21e;
+    color: white; }
+  .container img {
+    height: auto;
+    margin: 40px auto 40px;
+    display: block;
+    -webkit-box-shadow: 15px 20px 3px #1ec21e;
+    -moz-box-shadow: 15px 20px 3px #1ec21e;
+    -ms-box-shadow: 15px 20px 3px #1ec21e;
+    box-shadow: 15px 20px 3px #1ec21e; }
+  .container table {
+    width: 100%;
+    color: #333;
+    background: white;
+    border-collapse: collapse; }
+    .container table tr {
+      border-bottom: 1px solid white; }
+    .container table td {
+      padding: 5px 0; }
+      .container table td:first-child {
+        width: 30%;
+        padding-left: 10px;
+        -webkit-text-shadow: 5px 10px 3px #bb2e2e;
+        -moz-text-shadow: 5px 10px 3px #bb2e2e;
+        -ms-text-shadow: 5px 10px 3px #bb2e2e;
+        text-shadow: 5px 10px 3px #bb2e2e; }
+  .container p#footer {
+    margin-top: 100px; }
+
+/*# sourceMappingURL=main.css.map */

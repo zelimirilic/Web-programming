@@ -1,0 +1,20 @@
+.first, .second, .third {
+  border: 2px solid #942a2a;
+  padding: 10px;
+  float: left;
+  width: 41.6666666667%;
+  overflow: auto;
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.second {
+  border-color: blue;
+  width: 480px; }
+
+.third {
+  border-color: green;
+  width: 10%;
+  width: 20.8333333333%;
+  margin-left: 15px; }
+
+/*# sourceMappingURL=main.css.map */

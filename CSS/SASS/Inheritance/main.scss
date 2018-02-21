@@ -1,0 +1,27 @@
+.first {
+    border: 2px solid rgb(148, 42, 42);
+    padding: 10px;
+    float:left;
+    width:400px/960px*100%;
+    overflow: auto;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.second{
+    @extend .first;
+    border-color:blue; 
+    
+    width: (960px / 2);//obrati paznju na px, gde se pisu. posto se anuliraju!
+    
+
+}
+
+.third{
+    @extend .first;
+    border-color:green;
+    width:10%;
+    width:200px/960px*100%;
+    margin-left:15px;
+    
+}
