@@ -1,17 +1,19 @@
 @import "variables";
-
-nav {
-    background-color: $blue-color;
-    color: $main-color;
-   
-}
-
 header {
-    background-color: $background-color;
-    padding: 10% 5%;
+    background-color: $bg-color-1;
+    padding: 0 0 5%;
     text-align: center;
 }
 
-.navbar-toggler-icon {
-    color: $main-color;
+.hero-row {
+    padding: 40px;
+}
+
+.main-links > a {
+    transition: color .2s ease;
+
+    &:hover {
+        text-decoration: none;
+        color: $blue-color;
+    }
 }

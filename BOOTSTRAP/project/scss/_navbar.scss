@@ -1,0 +1,54 @@
+@import "variables";
+
+.nav-holder {
+    background-color: $blue-color;
+    color: $main-color;
+    font-family: $main-font;
+    padding: 5px 0;
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.navbar-toggler {
+    background-color: $bg-color-1;
+    padding: .20rem .75rem;
+
+    &:focus {
+        background-color: $inverse-color;
+    }
+}
+
+.navbar-nav {
+    text-align: left;
+}
+
+.menu-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.nav-link {
+    font-weight: 900;
+    color: $main-color;
+}
+@media (max-width: 991px) {
+    #navbarNav {
+        position: absolute;
+        top: 110%;
+        left: -15vw;
+        width: 130vw;
+        padding: 0 17vw;
+        background-color: $blue-color;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-toggleable-md .navbar-nav {
+        margin-left: auto;
+    }
+}

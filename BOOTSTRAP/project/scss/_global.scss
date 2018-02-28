@@ -1,11 +1,95 @@
 @import "variables";
+body {
+    font-family: $main-font;
+}
+
+.container {
+    max-width: 960px;
+}
+
+button {
+    font-family: $main-font;
+}
+
 a {
     text-decoration: none;
     color: $main-color;
 }
 
-h1{
-    color: $main-color;
-    padding: 5%;
+img {
+    max-width: 100%;
 }
 
+h1 {
+    color: $main-color;
+    padding: 5% 5% 0 5%;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.separator {
+    display: inline-block;
+    width: 180px;
+    margin: 10px 0;
+
+    .separator-left,
+    .separator-right {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(50% - 20px);
+        height: 3px;
+        background-color: $inverse-color;
+    }
+
+    .separator-sign {
+        color: $inverse-color;
+        margin: 0 5px;
+    }
+
+    &.main {
+        .separator-left,
+        .separator-right {
+            background-color: $main-color;
+        }
+
+        .separator-sign {
+            color: $main-color;
+        }
+    }
+}
+
+.section-headline-holder {
+    text-align: center;
+    padding: 7% 0 3% 0;
+    color: $inverse-color;
+
+    &.inverse {
+        color: $main-color;
+
+        .separator {
+            .separator-left,
+            .separator-right {
+                background-color: $main-color;
+            }
+
+            .separator-sign {
+                color: $main-color;
+            }
+        }
+    }
+}
