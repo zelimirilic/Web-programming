@@ -1,0 +1,82 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.transform {
+    background-color: blue;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+.section-3 img {
+    width: 33%;
+}
+
+.selected {
+    box-sizing: border-box;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .second-ul {
+    background-color: red;
+}
+
+.list {
+    background-color: bisque;
+}
+
+.lists-3 {
+    text-transform: uppercase;
+    background-color: green;
+}
+
+.active{
+    background-color: dodgerblue;
+} */
