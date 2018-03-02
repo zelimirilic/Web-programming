@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: darkblue;
+           
+
+        }
+        button {
+            background-color: red;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+            
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+  
+   <button type="submit" onclick="changeColor()">Toggle Background</button>
+   <button type="submit" onclick="stopchangingColor()">Stop</button>
+<script>
+ 
+    function changeColor() {
+        var body = document.querySelector('body');
+        // body.className="yellow";
+        body.classList.add("yellow");
+        // this.classList.add("yellow");//u hendler f jama je this referenca nad elementom
+    }
+    function stopchangingColor() {
+        var body = document.querySelector('body');
+        body.className="";
+    }
+    body.addEventListener("onclick",changeColor,stopchangingColor);
+</script>
+</body>
+
+
+</html>
