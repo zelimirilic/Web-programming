@@ -1,0 +1,52 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.ground {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #0212FE;
+    background-image: url("bg.jpg");
+    background-repeat: repeat-x;
+    background-position: 50% 100%;
+}
+
+@keyframes groundMove {
+    0% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: - 1000% 100%;
+    }
+}
+
+.ground.move {
+    animation: groundMove 6s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    width: 120px;
+}
+
+.mario.hidden {
+    display: none;
+}
+
+.mario-run {
+    display: none;
+}
+
+.mario-run.active {
+    display: block;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    width: 100px;
+}
