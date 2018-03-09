@@ -1,0 +1,37 @@
+#searchBar {
+    width: 800px;
+    margin: 50px auto;
+}
+
+form {
+    display: inline-block;
+    float: right;
+    border: 1px solid rgb(53, 49, 49);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+#searchButton {
+    width: 20px;
+}
+
+input {
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+img{
+    width: 100%;
+}
+p{
+    width: 30%;
+}
+section{
+    width: 30%;
+    display: inline-block;
+
+}
