@@ -1,19 +1,15 @@
 body {
-
     background: white;
 }
 
 table {
-
     opacity: 0.5;
 }
 
-td:first-child{
-
+td:first-child {
     background-color: rgba(231, 149, 26, 0.5);
 }
 
-td > img {
-
+td>img {
     opacity: 0.5;
 }
