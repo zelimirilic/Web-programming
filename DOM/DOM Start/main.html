@@ -11,26 +11,33 @@
 
 <body>
     <div>
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+        <img onclick='switchBorders' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
+        <img onclick='switchBorders' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
+        <img onclick='switchBorders' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
     </div>
 
     <div>
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
-        <img src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+        <img onclick='switchBorders()' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
+        <img onclick='switchBorders()' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
+        <img onclick='switchBordersI()' src="https://images.pexels.com/photos/127160/pexels-photo-127160.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+            alt="">
     </div>
 
 
     <script>
         var divs = document.querySelectorAll("div");
-        console.log(divs);
-        divs[0].children[0].className = "selected"
+        //console.log(divs);
+        divs[0].children[1].className = "selected"
 
-        function switchBorders () {
-            
+        function switchBorders(el) {
+            el.
         }
+        
     </script>
 </body>
 

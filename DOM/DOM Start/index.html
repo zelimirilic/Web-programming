@@ -13,10 +13,16 @@
         background-color: green;
     }
     .transform {
-        background-color: yellow;
+        background-color: blueviolet;
         text-transform: uppercase;
     }
-    
+    .transformText {
+        color: chartreuse;
+        text-transform: uppercase;
+    }
+    .blue {
+        text-align: center;
+    }
     </style>
 </head>
 
@@ -39,16 +45,22 @@
     </ul>
     <script>
     var a = document.querySelectorAll('ul');
-    a[1].className = 'red';
+    a[0].className = 'red';
 
     
     var b = document.querySelectorAll('li');
-    b[0].className = 'second';
+    b[4].className = 'second';
 
     var c = document.querySelectorAll('ul');
     c[2].className = 'transform';
 
-    
+    var d = document.querySelectorAll('body');
+    d[0].className = 'transformText';
+
+    var items = document.querySelectorAll("li");
+        for (var i = 0; i < items.length; i++) {
+           items[i].className = "blue";
+     }
 
 
     </script>
