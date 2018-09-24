@@ -1,0 +1,25 @@
+:root {
+    --color: green;
+    --spacing:10px;
+    --blur: 10px;
+}
+
+body {
+    background-color: rgb(53, 53, 92);
+    text-align: center;
+    color: antiquewhite;
+}
+
+span {
+    color: red;
+}
+
+.controls {
+    margin: 30px 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--color);
+    filter: blur(var(--blur));
+}
