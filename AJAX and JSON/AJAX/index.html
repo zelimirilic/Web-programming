@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="search-form">
+        <input type="text" class="search" placeholder="City or State"><br>
+
+
+        <input type="text" class="orOr" placeholder="Filter for A City"><br>
+
+
+        <input type="text" class="orOr" placeholder="Or a State">
+
+
+
+    </form>
+
+    <script>
+
+        const endpoint = "https://raw.githubusercontent.com/lutangar/cities.json/master/cities.json";
+
+        const cities = [];
+
+        fetch(endpoint)
+            .then(hugeObj => hugeObj.json())
+            .then(data => cities.push(...data))
+
+        function findMatch(wordMatch, cities) {
+            return cities.filter(place => {
+                const regex = new RegExp(wordMatch, 'gi');
+                return place.country.match(regex) || place.name.match(regex)
+            });
+        }
+
+        function displayMatch() {
+            const matchArr = findMatch(this.value, cities);
+            const html = matchArr.map(place => {
+                return `
+                <li>
+                <span class='ime'>${place.name}, ${place.country}</span>
+                <span class='gps'>${place.lat}, ${place.lng}</span>
+                </li>
+                `;
+            }).join('');
+            countOrName.innerHTML = html;
+        }
+
+        const searchInput = document.querySelector('.search');
+        const countOrName = document.querySelector('.orOr');
+
+        searchInput.addEventListener('change', displayMatch);
+        searchInput.addEventListener('keyup', displayMatch);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
