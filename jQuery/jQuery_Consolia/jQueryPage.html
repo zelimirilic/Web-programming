@@ -7,35 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery Practice</title>
     <style type="text/css">
-    .Highlight {background: pink;}
+        .Highlight {
+            background: pink;
+        }
     </style>
     <script type="text/javascript" src="jquery.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
-                       
-                this.title = 'some title';
-                $(this).attr('title', 'Some title2');
 
-                $('div.BlueDiv, div.RedDiv').attr({
-                    title: 'Some title3',
-                    style: 'background-color:yellow; font-size:30px',
-                    type: 'text'                     
-                })
-                // Modifying the DOM
-                $('#myContent').append('<span style="background-color:red; font-size:20px">Appended 1 child</span>');
-                $('#myContent').prepend('<span style="background-color:red; font-size:30px">Prepended 1 child</span>');
-                // Wrap
-                $('.Foo').wrap('<div class="BlueDiv ParentWraper" />');
-                //Remove
-                $('.ParentWraper').remove();
+            this.title = 'some title';
+            $(this).attr('title', 'Some title2');
 
-            });
+            $('div.BlueDiv, div.RedDiv').attr({
+                title: 'Some title3',
+                style: 'background-color:yellow; font-size:30px',
+                type: 'text'
+            })
+            // Modifying the DOM
+            $('#myContent').append('<span style="background-color:red; font-size:20px">Appended 1 child</span>');
+            $('#myContent').prepend(
+                '<span style="background-color:red; font-size:30px">Prepended 1 child</span>');
+            // Wrap
+            $('.Foo').wrap('<div class="BlueDiv ParentWraper" />');
+            //Remove
+            $('.ParentWraper').remove();
 
-                function FocusBlur(el) {
-                    $(el).toggleClass('Highlight');
-                }
-           
+        });
+
+        function FocusBlur(el) {
+            $(el).toggleClass('Highlight');
+        }
     </script>
 </head>
 
@@ -78,9 +80,9 @@
         <span>Blue div</span>
     </div>
     <br />
-        <span class="Foo">Span 1</span>
-        <span class="Foo">Span 2</span>
-        <span id="Span3" class="Foo">Span 3</span>
+    <span class="Foo">Span 1</span>
+    <span class="Foo">Span 2</span>
+    <span id="Span3" class="Foo">Span 3</span>
     <br />
     <span class="BlueDiv">This is my blue span</span>
     <br />
@@ -94,7 +96,7 @@
         <table style="width:300px;">
             <tr>
                 <td style="width:30%;">First Name</td>
-                <td style="width:70%;"><input id="FirstNameTextBox" onfocus="FocusBlur(this)"  type="text" value="John"></td>
+                <td style="width:70%;"><input id="FirstNameTextBox" onfocus="FocusBlur(this)" type="text" value="John"></td>
             </tr>
             <tr>
                 <td>Last Name</td>
