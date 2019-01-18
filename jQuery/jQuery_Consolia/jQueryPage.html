@@ -33,10 +33,37 @@
             //Remove
             $('.ParentWraper').remove();
 
+            jEvents();
+            // Handle select
+            $('#myContent').mouseenter(function() {
+                toggle($(this));
+                $(this).css('cursor', 'pointer');
+            })
+            .mouseleave(function() {
+                
+                toggle($(this));
+            })
+            .mouseup(function(x) {
+                $(this).text('X: ' + x.pageX + ' Y: ' + x.pageY);
+            })
+
         });
 
         function FocusBlur(el) {
             $(el).toggleClass('Highlight');
+        }
+
+        function jEvents() {
+            $('#SubmitButton').click(function () {
+                var firstNameVal = $('#FirstNameTextBox').val();
+                var lastNameVal = $('#LastNameTextBox').val();
+
+                $('#subOutput').text(firstNameVal + ' ' + lastNameVal);
+            });
+        }
+
+        function toggle(table) {
+            table.toggleClass('Highlight');
         }
     </script>
 </head>
@@ -107,13 +134,32 @@
                 <td><textarea rows="5" cols="60" id="CommentsTextBox">TextArea</textarea></td>
             </tr>
             <tr>
+                <td>
+                    <select id="selectItem">
+                        <option value="junior">Junior SD</option>
+                        <option value="medior">Medior SD</option>
+                        <option value="senior">Senior SD</option>
+                    </select>
+                </td>
                 <td><input id="SubmitButton" type="button" value="Submit" /></td>
-                <td>&nbsp;</td>
+                <td>
+                    <div id="subOutput"></div>
+                </td>
             </tr>
 
         </table>
     </form>
 
+
+    <script type="text/javascript">
+        /* Handle events - old way
+    var button = document.getElementById('SubmitButton');
+    if(document.addEventListener) {
+        button.addEventListener('click', function() {
+            alert('Clicked Button');
+        }, false);
+    }*/
+    </script>
 
 </body>
 
