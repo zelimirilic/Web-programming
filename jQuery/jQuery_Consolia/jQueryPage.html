@@ -7,9 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery Practice</title>
     <style type="text/css">
-        .Highlight {
-            background: pink;
-        }
+        td {text-align: left; vertical-align: top;}
+        input[type=text] {background-color: #efefef;}
+        .BlueDiv {background-color: navy; color: white; width: 200px;}
+        .RedDiv {background-color: red; color: white; width: 200px;}
+        .Highlight {background: pink;}
+        .LightHighlight {background-color: #cccccc;}
+        .PhoneHighlight {background-color: #cccccc;}
+        .PhoneNumber {margin-top: 5px; width: 80px;}
+        .PhoneType {margin-top: 5px;}
+        .PhoneNumberDiv {text-align: left; vertical-align: middle; width: 200px; float: left;}
+        .PhoneTypeDiv {text-align: left; vertical-align: middle; width: 200px; float: left;}
+
+
     </style>
     <script type="text/javascript" src="jquery.js"></script>
 
@@ -26,8 +36,7 @@
             })
             // Modifying the DOM
             $('#myContent').append('<span style="background-color:red; font-size:20px">Appended 1 child</span>');
-            $('#myContent').prepend(
-                '<span style="background-color:red; font-size:30px">Prepended 1 child</span>');
+            $('#myContent').prepend('<span style="background-color:red; font-size:30px">Prepended 1 child</span>');
             // Wrap
             $('.Foo').wrap('<div class="BlueDiv ParentWraper" />');
             //Remove
@@ -35,7 +44,7 @@
 
             jEvents();
             // Handle select
-            $('#myContent').mouseenter(function() {
+        /*    $('#myContent').mouseenter(function() {
                 toggle($(this));
                 $(this).css('cursor', 'pointer');
             })
@@ -46,8 +55,19 @@
             .mouseup(function(x) {
                 $(this).text('X: ' + x.pageX + ' Y: ' + x.pageY);
             })
+        */
+       $('#myContent').on('mouseenter mouseleave mouseup', function(element) {
+           $(this).toggleClass('Highlight');
+           $(this).css('cursor', 'pointer');
+           if(element.type === 'mouseup') {
+               $(this).text('X: ' + element.pageX + ' Y: ' + element.pageY);
+           }
+       })
+
 
         });
+
+
 
         function FocusBlur(el) {
             $(el).toggleClass('Highlight');
@@ -65,6 +85,7 @@
         function toggle(table) {
             table.toggleClass('Highlight');
         }
+
     </script>
 </head>
 
