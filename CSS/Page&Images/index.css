@@ -1,7 +1,7 @@
 .img1 {
+    display: block;
     height: 200px;
     float: right; 
-    display: block;
     
 }
 
@@ -13,6 +13,6 @@
 
 .img3 {
     width: 200px;
-    height: 200px;
     display: block;
+    height: 200px;
 }
