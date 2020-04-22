@@ -1,68 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-    .red{
-        background-color: red;
-    }
-    .second {
-        background-color: green;
-    }
-    .transform {
-        background-color: blueviolet;
-        text-transform: uppercase;
-    }
-    .transformText {
-        color: chartreuse;
-        text-transform: uppercase;
-    }
-    .blue {
-        text-align: center;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <ul>
-        <li>Prva</li>
-        <li>Druga</li>
-        <li>Treca</li>
-    </ul>
-    <ul>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
-    </ul>
-    <ul>
-        <li>mala slova</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-    <script>
-    var a = document.querySelectorAll('ul');
-    a[0].className = 'red';
+    <h1 id="main-title">Dive into the DOM!</h1>
+    <section>
+        <ul style="white-space: pre;">
+            <li class="list-item">Prva</li>
+            <li class="list-item">Druga</li>
+            <li class="list-item">Treca</li>
+            <li class="list-item">First</li>
+            <li class="list-item">Second</li>
+            <li class="list-item">Third</li>
+        </ul>
+        <ul>
+            <li class="list-item">mala slova</li>
+            <li class="list-item">VELIKA slova</li>
+            <li class="list-item">mala slova</li>
+            <li class="list-item">VELIKA SLOVA</li>
+        </ul>
+    </section>
 
-    
-    var b = document.querySelectorAll('li');
-    b[4].className = 'second';
-
-    var c = document.querySelectorAll('ul');
-    c[2].className = 'transform';
-
-    var d = document.querySelectorAll('body');
-    d[0].className = 'transformText';
-
-    var items = document.querySelectorAll("li");
-        for (var i = 0; i < items.length; i++) {
-           items[i].className = "blue";
-     }
+    <button>Toogle visibility</button>
+    <input type="text" value="default text">
 
 
-    </script>
+    <script src="app.js"></script>
 </body>
+
 </html>
